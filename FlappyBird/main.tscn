@@ -1,8 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://vqnvl0ju002d"]
+[gd_scene load_steps=4 format=3 uid="uid://vqnvl0ju002d"]
 
 [ext_resource type="PackedScene" uid="uid://crrmd56xn12rm" path="res://components/bird/bird.tscn" id="1_mt7d2"]
+[ext_resource type="PackedScene" uid="uid://cnsh3sto41oew" path="res://components/ground/ground.tscn" id="2_oueq6"]
+[ext_resource type="PackedScene" uid="uid://bnyuly4yuo46g" path="res://components/background/background.tscn" id="3_34c4u"]
 
 [node name="Main" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("3_34c4u")]
+
+[node name="Ground" parent="." instance=ExtResource("2_oueq6")]
 
 [node name="Bird" parent="." instance=ExtResource("1_mt7d2")]
 position = Vector2(225, 272)

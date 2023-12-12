@@ -3,36 +3,36 @@
 [ext_resource type="Script" path="res://components/bird/bird.gd" id="1_68v43"]
 [ext_resource type="Texture2D" uid="uid://bca7wqc1sytxx" path="res://assets/Player/StyleBird1/Bird1-2.png" id="2_lvxly"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5w10t"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_byy34"]
 atlas = ExtResource("2_lvxly")
-region = Rect2(0, 0, 16, 16)
+region = Rect2(1, 0, 14, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bu4a1"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxllp"]
 atlas = ExtResource("2_lvxly")
-region = Rect2(16, 0, 16, 16)
+region = Rect2(17, 0, 14, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vtcps"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_o84hv"]
 atlas = ExtResource("2_lvxly")
-region = Rect2(32, 0, 16, 16)
+region = Rect2(33, 0, 14, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_882n1"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_nqwpy"]
 atlas = ExtResource("2_lvxly")
-region = Rect2(48, 0, 16, 16)
+region = Rect2(49, 0, 14, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vde1c"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5w10t")
+"texture": SubResource("AtlasTexture_byy34")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_bu4a1")
+"texture": SubResource("AtlasTexture_sxllp")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vtcps")
+"texture": SubResource("AtlasTexture_o84hv")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_882n1")
+"texture": SubResource("AtlasTexture_nqwpy")
 }],
 "loop": true,
 "name": &"default",
@@ -43,13 +43,13 @@ animations = [{
 radius = 8.5
 
 [node name="Bird" type="CharacterBody2D"]
-scale = Vector2(4, 4)
+scale = Vector2(2, 2)
 script = ExtResource("1_68v43")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_vde1c")
-frame_progress = 0.817782
+frame_progress = 0.11015
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_j4myj")
